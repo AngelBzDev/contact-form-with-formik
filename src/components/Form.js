@@ -1,5 +1,5 @@
 import React from "react";
-import { Formik, Form as Frm, } from "formik";
+import { Formik, Form as Formulario, } from "formik";
 
 import Input from "./Input";
 import Button from "./Button";
@@ -47,7 +47,7 @@ const Form = () => {
         validate={validate}
         onSubmit={handleSubmit}
       >
-        <Frm className="form">
+        <Formulario className="form">
           <Input
             label={"Nombre"}
             name={"name"}
@@ -58,11 +58,11 @@ const Form = () => {
             name={"email"}
             icon={<MdOutlineEmail className="icons" />}
           />
-          <Input label={"Mensaje"} name={"mensaje"} />
+          <Input label={"Mensaje"} name={"mensaje"} autocomplete={'off'}/>
           <div className="button__container">
             <Button>Enviar Mensaje</Button>
           </div>
-        </Frm>
+        </Formulario>
       </Formik>
     </div>
   );

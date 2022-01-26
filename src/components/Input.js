@@ -10,7 +10,7 @@ const Input = ({label, icon,...rest}) => {
          <label className='input__container--label'>{label}</label>
          <div className='input'>
             {icon}
-            <input {...field} />
+            <input {...field} {...rest}/>
          </div>
          {meta.touched && meta.error && <p className='msj msj-error'>{meta.error}</p>}
       </div>
