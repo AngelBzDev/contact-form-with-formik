@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root{
+   --primary: #010448;
+   --secundary: #0b75ff;
+   --tree: #040d5a;
+   --white: #f9f9fb;
+   --text: #9a9cd3;
+   --textSec: #4d4d6c;
+   --borderInput: #d5d5d8;
+}
+
+body{
+   background: var(--primary);
+   font-family: 'Poppins', sans-serif;
+}
+
+textarea{
+   width: 100%;
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   resize: none;
+   overflow: hidden;
+   color: var(--textSec);
+   background: transparent;
+}
+
+textarea:focus{
+   border: none;
+   outline: none;
+}
+
+.container{
+   width: 95%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.icons{
+   color: var(--secundary);
+   margin-right: 1rem;
+   font-size: 1.3rem;
+}
+
+.main{
+   padding: 2rem 1rem;
+   height: 100vh;
+}
+
+@media (min-width: 768px){
+   
+   .main{
+      padding: 3rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;  
+   }   
+}
+
+.infoContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.titleContainer{
+   color: var(--text);
+}
+
+.titleContainer__title{
+   margin-bottom: .6rem;
+   color: var(--white);
+   font-weight: 700;
+}
+
+.titleContainer__slogan{
+   margin-bottom: .3rem;
+}
+
+.contactContainer{
+   display: flex;
+   flex-direction: column;
+   margin-top: 1rem;
+   width: fit-content;
+}
+
+.contact{
+   padding: 1rem;
+   color: var(--white);
+   border: 2px solid transparent;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+   width: 100%;
+   transition: all .2s ease;
+}
+
+.contact:hover{
+   border: 2px solid var(--secundary);
+   background: var(--tree);
+}
+
+.icon--social{
+   color: var(--white);
+   margin: 0;
+}
+
+.social__container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%; 
+   margin-bottom: 1rem;
+}
+
+@media (min-width:768px){
+   .social__container{
+      width: fit-content;
+   }
+}
+
+.social{
+   padding: 1.5rem;
+   border-radius: 50%;
+   color: var(--white);
+   border: 2px solid transparent;
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   line-height: 0;
+   transition: all .2s ease;
+   margin-right: .5rem;
+}
+
+@media (min-width: 768px){
+   .social{
+      margin-right: 2rem;
+   }   
+}
+
+.social:hover{
+   border: 2px solid var(--tree);
+   background: var(--secundary);
+}
+
+.form{
+   background: var(--white);
+   border-radius: 15px;
+   width: 100%;
+   padding: 2rem 1rem;
+   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+   .form{
+      width: 90%;
+      padding: 2.5rem;
+   }   
+}
+
+.input__container{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1.5rem;
+}
+
+.input__container--label{
+   color: var(--textSec);
+   font-weight: 500;
+   margin-bottom: .3rem;
+}
+
+.input{
+   display: flex;
+   border: 2.5px solid var(--borderInput);
+   padding: .7rem .8rem;
+   border-radius: 7px;
+}
+
+.input:focus-within{
+   border: 2.5px solid var(--secundary);
+}
+
+.input input{
+   border: none;
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   color: var(--textSec);
+   font-weight: 500;
+   width: 100%;
+   background: transparent;
+}
+
+.input input:focus{
+   border: none;
+   outline: none;
+}
+
+.button__container{
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   height: 30vh;
+}
+
+.button{
+   background: var(--secundary);
+   border-radius: 7px;
+   font-weight: 500;
+   font-size: 16px;
+   color: var(--white);
+   padding: .7rem 2rem;
+   font-family: 'Poppins', sans-serif;
+   border: none;
+   cursor: pointer;
+}
+
+.msj{
+   font-weight: 500;
+}
+
+.msj.msj-error{
+   color: rgb(187, 32, 32);
+}
+
+.swal-modal{
+   border-radius: 15px;
+}
+
+.swal-button{
+   background: var(--secundary);
+}
+
+.swal-button:hover{
+   background: var(--secundary);
+}
+/*link inspiracion https://dribbble.com/shots/14139115-Contact-Form-02 */
